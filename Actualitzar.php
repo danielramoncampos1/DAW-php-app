@@ -3,9 +3,17 @@
 // Incluye el archivo de conexión
 require_once('Connexio.php');
 
-class Actualitzar {
-    
-    // Método para actualizar un producto en la base de datos
+class Actualitzar {   
+    /**
+     * Mètode per actualitzar un producte a la base de dades.
+     * Aquest mètode rep les dades actualitzades d'un producte i les guarda a la base de dades.
+     * 
+     * @param int $id Identificador únic del producte.
+     * @param string $nom Nom del producte.
+     * @param float $preu Preu del producte.
+     * @param int $quantitat Quantitat disponible del producte.
+     * @return bool Retorna true si l'actualització s'ha realitzat correctament, false en cas contrari.
+     */
     public function actualizar($id, $nom, $descripcio, $preu, $categoria) {
         // Verifica si todos los campos requeridos están presentes
         if (!isset($id) || !isset($nom) || !isset($descripcio) || !isset($preu) || !isset($categoria)) {

@@ -1,8 +1,18 @@
 <?php
 
+/**
+ * Classe Footer
+ */
 class Footer {
-
-   // Método para mostrar el pie de página
+   
+/**
+ * Mètode per mostrar el peu de pàgina del lloc web.
+ * Aquest mètode imprimeix l'HTML necessari per al peu de pàgina,
+ * incloent els scripts de Bootstrap i un script personalitzat
+ * per activar el carrusel.
+ *
+ * @return void
+ */
    public function mostrarFooter() {
         // Imprime el HTML del pie de página
         echo '<div class="footer text-center bg-dark text-white py-2">
